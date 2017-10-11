@@ -1,0 +1,16 @@
+{
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "66.147.244.197",
+  "target": "/public_html/school/dgm3790/waterBottlesRUs",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**",
+    "/scss/"
+  ],
+  "username": "youwill2",
+  "watch": [],
+  "transport": "scp",
+  "password": "983376.blu.Wp#33"
+}
