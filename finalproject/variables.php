@@ -2,5 +2,5 @@
 	define('HOST', 'localhost');
 	define('USER', 'root');
 	define('PASSWORD','');
-	define('DB_NAME', 'dgm3760');
+	define('DB_NAME', 'dgm3790');
 ?>
