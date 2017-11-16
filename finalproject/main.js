@@ -5,7 +5,8 @@ $(document).ready(function () {
 	// creating the new list item
 	function newItem(){
 		var input = $('.new-item').val();
-		var li = $('<li></li>');
+		var li = $('<li class="task"></li>');
+		
 		var ul = $('.list ul');
 		if (input === '') {
     		alert("Entry required.");
@@ -14,10 +15,7 @@ $(document).ready(function () {
 			ul.append(li);
 			//creating the delete button
 			var btn = $('<button class="delete">X</button>');
-			$(btn).css({
-				'background':'red',
-				'padding':'5px'
-			});
+			
 			$(li).append(btn);
 
 	  	}

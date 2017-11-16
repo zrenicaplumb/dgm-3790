@@ -12,16 +12,28 @@ h1 {
     font-weight: 100;
     text-align: center;
 }
-
-.list-wrap  {
+p.hello {
+    display: block;
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    top: -5px;
+    color: #fff;
+}
+h2.hello2{
+    text-align: center;
+    color: #fff;
+}
+.list-wrap, form {
     width: 35%;
     background: #fff;
     padding: 20px;
     margin: auto;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    margin-bottom: 45px;
 }
 
-.list-wrap h2{
+.list-wrap h2, form h2{
 
     text-align: center;
     color: rgb(52,58,63);
@@ -30,27 +42,30 @@ h1 {
   
 
 }
-.list-wrap input{
+.list-wrap input, form input{
 	display: block;
-	width: 99%;
+	width: 100%;
 	margin: 20px 0;
 	padding: 12px 0;
 	font-size: 14px;
 	text-indent: 4px;
 }
-.list-wrap button{
-	    margin: auto;
+.list-wrap .add, .list-wrap .save, form button{
+    margin: auto;
     display: block;
     background: rgb(0,167,92);
     border: none;
     border-radius: 5px;
-    padding: 10px 14px;
-    font-size: 16px;
+    padding: 8px 12px;
+    font-size: 14px;
     color: #fff;
     font-weight: 100;
     cursor: pointer;
 }
-.list-wrap a {
+.list-wrap .add{
+    margin-bottom: 20px;
+}
+.list-wrap a, form a{
         color: rgb(52,58,63);
     text-decoration: none;
     margin: 10px 0;
@@ -64,12 +79,31 @@ h1 {
 	text-decoration: underline;
 
 }
-li {
-    border: 1px solid black;
-    padding: 10px;
-    list-style: none;
+ul{
+    margin:0 0;
 }
-#delete-btn{
+.list li.task{
+       background: gray;
+    list-style: none;
+    padding: 10px;
+    position: relative;
+    left: -20px;
+    margin: 2px 0;
+}
+.list li.task:hover{
+    background: lightgray;
+    transition: .3s all;
+}
+button.delete{
     background: red;
-    padding: 5px;
+    padding: 10px;
+    float: right;
+    display: inline-block;
+    top: -10px;
+    position: relative;
+    right: -10px;
+    border: none;
+}
+.clear{
+    clear: both;
 }

@@ -6,7 +6,7 @@
 <?php require_once('head.php'); ?>
 <body>
 	<?php require_once('header.php'); ?>
-	<?php echo '<p>Hello ' . $_COOKIE['username'] . '<a class="signout" href="logout.php" style="color:#fff;"> Sign out</a></p>';?>
+	<?php echo '<p class="hello">Hello ' . $_COOKIE['username'] .','. '<a class="signout" href="logout.php" style="color:#fff;"> Sign out</a></p>';?>
 	<h1>To Do List</h1>
 	<div class="list-wrap">
 		<h2>To Do</h2>
@@ -17,9 +17,9 @@
 				
 			</ul>
 		</div> 
-		
+		<h2 class="clear">Completed Tasks</h2>
 		<button class="save">Save list</button>
-		<h2>Completed Tasks</h2>
+		
 	</div>
 		
 	
