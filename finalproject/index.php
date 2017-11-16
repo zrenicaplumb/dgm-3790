@@ -6,10 +6,24 @@
 <?php require_once('head.php'); ?>
 <body>
 	<?php require_once('header.php'); ?>
-	<?php echo 'Hello ' . $_COOKIE['username'] . '<a href="logout.php" style="color:#fff;"> Sign out</a>';?>
+	<?php echo '<p>Hello ' . $_COOKIE['username'] . '<a class="signout" href="logout.php" style="color:#fff;"> Sign out</a></p>';?>
 	<h1>To Do List</h1>
-	<div class="list">
-		asd
+	<div class="list-wrap">
+		<h2>To Do</h2>
+		<input class="new-item" type="text" name="add" placeholder="Title" required>
+		<button class="add">Add to list</button>
+		<div class="list">
+			<ul>
+				
+			</ul>
+		</div> 
+		
+		<button class="save">Save list</button>
+		<h2>Completed Tasks</h2>
 	</div>
+		
+	
+	
+
 </body>
 </html>

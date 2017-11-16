@@ -16,9 +16,9 @@
 				header('Location: index.php');
 			}
 			else{
-				echo '<p>Could not find account for '.$_POST['username'].'.</p>';
+				echo '<p style="color:#fff;">Could not find account for '.$_POST['username'].'.</p>';
 				
-
+				
 			}
 		
 		// $query = "INSERT INTO todo_list_users (username, password) VALUES ('$username','$password')";

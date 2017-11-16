@@ -15,7 +15,8 @@
 				echo '<br><a href="login.php">Login to your new account.</a>';
 				mysqli_close($dbconnection);
 				exit();
-			}
+				
+			}	
 			else{
 				echo '<p class="error">An account already exists with this username, use a different username.';
 				echo '<br><a href="login.php">Go to login page.</a>';
