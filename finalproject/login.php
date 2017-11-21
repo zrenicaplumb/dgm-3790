@@ -6,7 +6,7 @@
 		$password = trim($_POST['password']);
 		if(!empty($username) && !empty($password)){
 			
-			$query = "SELECT * FROM todo_list_users WHERE username = '$username'";
+			$query = "SELECT * FROM todo_list_users WHERE username = '$username' ";
 			$result = mysqli_query($dbconnection, $query) or die('Query failed.');
 			if (mysqli_num_rows($result) == 1) {
 				
@@ -16,9 +16,9 @@
 				header('Location: index.php');
 			}
 			else{
-				echo '<p style="color:#fff;">Could not find account for '.$_POST['username'].'.</p>';
+				echo '<p class="not-found">Could not find account for '.' " '.$_POST['username'].' " '.'.</p>';
 				
-				
+
 			}
 		
 		// $query = "INSERT INTO todo_list_users (username, password) VALUES ('$username','$password')";
@@ -35,6 +35,7 @@
 		<h2>Login</h2>
 		<input type="text" name="username" placeholder="Username" required>
 		<input type="text" name="password" placeholder="Password" required>
+		<!-- <p class="not-found">Account not found, please try again.</p> -->
 		<button type="submit" name="submit">Log in</button>
 		<a href="create.php">Create an account</a>
 	</form>

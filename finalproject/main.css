@@ -57,7 +57,7 @@ h2.hello2{
     border: none;
     border-radius: 5px;
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     font-weight: 100;
     cursor: pointer;
@@ -83,19 +83,21 @@ ul{
     margin:0 0;
 }
 .list li.task{
-       background: gray;
+       background: lightgray;
     list-style: none;
     padding: 10px;
     position: relative;
     left: -20px;
     margin: 2px 0;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .list li.task:hover{
-    background: lightgray;
+    background:rgb(240,240,240);
     transition: .3s all;
 }
 button.delete{
-    background: red;
+    background: rgb(255,69,81);
     padding: 10px;
     float: right;
     display: inline-block;
@@ -107,3 +109,14 @@ button.delete{
 .clear{
     clear: both;
 }
+.not-found{
+        text-align: center;
+    color: red;
+    margin-bottom: 20px;
+    position: relative;
+    top: 182px;
+}
+button.save.clear{
+    margin-top:20px;
+}
+

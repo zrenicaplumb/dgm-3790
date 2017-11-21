@@ -15,10 +15,11 @@
 		<div class="list">
 			<ul>
 				
+				
 			</ul>
 		</div> 
-		<h2 class="clear">Completed Tasks</h2>
-		<button class="save">Save list</button>
+		
+		<button class="save clear" >Save list</button>
 		
 	</div>
 		

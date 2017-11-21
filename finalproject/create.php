@@ -2,7 +2,7 @@
 	require_once('variables.php');
 	if (isset($_POST['submit'])) {
 		$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('Connection failed.');
-		$username =  trim($_POST['username']);
+		$username = trim($_POST['username']);
 		$password = trim($_POST['password']);
 		$email = trim($_POST['email']);
 		if(!empty($username) && !empty($password)){
@@ -14,7 +14,6 @@
 				echo '<p>Your account has been created!</p>';
 				echo '<br><a href="login.php">Login to your new account.</a>';
 				mysqli_close($dbconnection);
-				exit();
 				
 			}	
 			else{
