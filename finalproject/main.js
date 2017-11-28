@@ -5,17 +5,21 @@ $(document).ready(function () {
 	var save = $('.save');
 	// creating the new list item
 	function newItem(){
-		var input = $('.new-item').val();
-		// var p = $('<p></p>');
-		var li = $('<li class="task" value="input"></li>');
+		var newTask = $('.new-item').val();
+		var input = $('<input class="task" value="" name="task">');
+		input.val(newTask);
+		var li = $('<li></li>');
+		
 		var date = new Date();
 		var ul = $('.list ul');
-		if (input === '') {
+		if (newTask === '') {
     		alert("Entry required.");
 	  	} else {
-	  		// p.append(input);
-			li.append(input);
-			ul.append(li);
+	  		
+	  		li.append(input);
+	  		ul.append(li);
+			// li.append(input);
+			// ul.append(li);
 			//creating the delete button
 			var btn = $('<button class="delete">X</button>');
 			$(li).append(btn);
@@ -24,13 +28,13 @@ $(document).ready(function () {
 	  	btn.on("click", function(){
 	  		$(this).parent().remove();
 	  	});
-	  	li.on("click", function(){
-	  		$(this).css({
-	  			'text-decoration':'line-through',
-	  			'background':'rgb(240,240,240)'
-	  		});
+	  	// li.on("click", function(){
+	  	// 	$(this).css({
+	  	// 		'text-decoration':'line-through',
+	  	// 		'background':'rgb(240,240,240)'
+	  	// 	});
 
-	  	}); 
+	  	// }); 
 	}
 	
 	

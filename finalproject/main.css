@@ -24,7 +24,7 @@ h2.hello2{
     text-align: center;
     color: #fff;
 }
-.list-wrap, form {
+.list-wrap, .login-form{
     width: 35%;
     background: #fff;
     padding: 20px;
@@ -33,7 +33,7 @@ h2.hello2{
     margin-bottom: 45px;
 }
 
-.list-wrap h2, form h2{
+.list-wrap h2, .login-form h2{
 
     text-align: center;
     color: rgb(52,58,63);
@@ -42,7 +42,8 @@ h2.hello2{
   
 
 }
-.list-wrap input, form input{
+
+.list-wrap .new-item, .login-form .new-item{
 	display: block;
 	width: 100%;
 	margin: 20px 0;
@@ -81,29 +82,36 @@ h2.hello2{
 }
 ul{
     margin:0 0;
+    display: block;
+    text-align: center;
 }
-.list li.task{
+ul li{
+        list-style: none;
+    right: 14px;
+    position: relative;
+}
+.list .task {
        background: lightgray;
     list-style: none;
     padding: 10px;
     position: relative;
-    left: -20px;
+   
     margin: 2px 0;
     cursor: pointer;
     border-radius: 5px;
 }
-.list li.task:hover{
-    background:rgb(240,240,240);
-    transition: .3s all;
+.list .task:hover{
+  /*  background:rgb(240,240,240);
+    transition: .3s all;*/
 }
 button.delete{
     background: rgb(255,69,81);
     padding: 10px;
-    float: right;
+    
     display: inline-block;
-    top: -10px;
+    
     position: relative;
-    right: -10px;
+    
     border: none;
 }
 .clear{

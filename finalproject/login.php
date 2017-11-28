@@ -31,10 +31,10 @@
 <body>
 	<?php require_once('header.php'); ?>
 	<h1>To Do List</h1>
-	<form action="login.php" method="POST" enctype="multipart/form-data">
+	<form action="login.php" method="POST" enctype="multipart/form-data" class="login-form">
 		<h2>Login</h2>
-		<input type="text" name="username" placeholder="Username" required>
-		<input type="text" name="password" placeholder="Password" required>
+		<input class="new-item" type="text" name="username" placeholder="Username" required>
+		<input class="new-item" type="text" name="password" placeholder="Password" required>
 		<!-- <p class="not-found">Account not found, please try again.</p> -->
 		<button type="submit" name="submit">Log in</button>
 		<a href="create.php">Create an account</a>
