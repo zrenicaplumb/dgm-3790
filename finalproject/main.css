@@ -25,7 +25,7 @@ h2.hello2{
     color: #fff;
 }
 .list-wrap, .login-form{
-    width: 35%;
+    width: 45%;
     background: #fff;
     padding: 20px;
     margin: auto;
@@ -69,12 +69,12 @@ h2.hello2{
 .list-wrap a, form a{
         color: rgb(52,58,63);
     text-decoration: none;
-    margin: 10px 0;
-    margin-bottom: 0;
+   
+  
     font-weight: 100;
-    margin-top: 20px;
+   
     text-align: center;
-    display: block;
+   /* display: block;*/
 }
 .list-wrap a:hover{
 	text-decoration: underline;
@@ -84,34 +84,34 @@ ul{
     margin:0 0;
     display: block;
     text-align: center;
+    padding: 0;
 }
 ul li{
         list-style: none;
-    right: 14px;
-    position: relative;
+   
 }
 .list .task {
-       background: lightgray;
+background: lightgray;
     list-style: none;
     padding: 10px;
     position: relative;
-   
     margin: 2px 0;
     cursor: pointer;
-    border-radius: 5px;
+    
+    width: 90%;
+    border: none;
+    display: inline-block;
 }
 .list .task:hover{
   /*  background:rgb(240,240,240);
     transition: .3s all;*/
 }
-button.delete{
+.delete{
     background: rgb(255,69,81);
     padding: 10px;
-    
     display: inline-block;
-    
     position: relative;
-    
+    width: 9%;
     border: none;
 }
 .clear{
@@ -126,5 +126,9 @@ button.delete{
 }
 button.save.clear{
     margin-top:20px;
+}
+h4{
+    margin: 5px 0;
+    margin-top:25px;
 }
 

@@ -30,11 +30,11 @@
 <body>
 	<?php require_once('header.php'); ?>
 	<h1>To Do List</h1>
-	<form action="create.php" method="POST" enctype="multipart/form-data">
+	<form action="create.php" method="POST" enctype="multipart/form-data" class="login-form">
 		<h2>Create an Account</h2>
-		<input type="email" name="email" placeholder="Email" required>
-		<input type="text" name="username" placeholder="Username" required>
-		<input type="password" name="password" placeholder="Password" required>
+		<input class="new-item" type="email" name="email" placeholder="Email" required>
+		<input class="new-item" type="text" name="username" placeholder="Username" required>
+		<input class="new-item" type="password" name="password" placeholder="Password" required>
 		<button type="submit" name="submit">Create</button>
 		<a href="login.php">Log in</a>
 	</form>
