@@ -29,10 +29,15 @@
 			    $result = mysqli_query($dbconnection, "SELECT * FROM tasks") or die("error");
 			    while ($row = mysqli_fetch_array($result)) {
 			        $content = $row['task'];
+			      	echo '<script>';
+				  	echo 'console.log('. json_encode( $row['task'] ) .')';
+				  	echo '</script>';
 			    }
+
 			    $message = "Hello ".$email.", here is your task list. \n" . $content;
 			    
 			  	
+
 			    mail($email, $subject, $message);
 			}
 	?>
